@@ -1,0 +1,17 @@
+
+
+/* ***************Font Awesome Styling***************************** */
+.details-box .fas:hover:not(.fa-star) {
+    text-shadow: 1px 1px 5px #aaa;
+    text-decoration: none;
+}
+
+/* *************************************************** */
+
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #4CAF50;
+    border-color: #8BC34A;
+}

@@ -1,0 +1,65 @@
+.unread {
+    background: #e3ecf3!important;
+}
+
+table tr {
+    transition: all .5s;
+    transform: rotateX(0deg);
+}
+tr.comment-row:hover:not(.unread) {
+    background: #e3ecf31a!important;
+}
+
+.tilt{
+    transform: rotateX(90deg);
+    opacity: 0;
+}
+
+.suckin{
+    transform: scale(0);
+}
+.hide {
+
+}
+.comment-side {
+    position: relative;
+}
+
+.markAsReadButton {
+    transition: all .5s;
+}
+
+
+.overlay:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: .5;
+}
+.overlay:before {
+    content: "";
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -2.5rem;
+    margin-left: -2.5rem;
+    border-radius: 50%!important;
+    border: .5em solid #4c9e5f;
+    border-top-color: #f8f9fa;
+    border-bottom-color: #f8f9fa;
+    transition: all .7s;
+    opacity: .5;
+    animation: spinner-border 3s linear infinite;
+    z-index: 9999;
+
+}
+
+/*  */

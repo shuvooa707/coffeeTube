@@ -1,0 +1,113 @@
+
+
+.dactive {
+    background-color: rgb(235, 235, 235)!important;
+    color: black!important;
+    position: relative;
+    border-left: 3px solid black;
+}
+.dactive:hover {
+    background-color: white!important;
+}
+
+main .card {
+    /* display: none!important; */
+    transform-origin: center;
+    transform: rotateX(0deg);
+    /* backface-visibility: visible; */
+}
+.btn-xm {
+    padding: 0.01rem .5rem!important;
+    font-size: .95em!important;
+}
+
+.ani-1{
+    animation: tabShowUp1 .5s ease-in-out 0s 1;
+}
+
+.ani-2{
+    animation: tabShowUp2 .5s ease-in-out 0s 1;
+}
+
+.ani-3{
+    animation: tabShowUp3 .7s ease-out 0s 1;
+}
+
+.ani-4{
+    animation: tabShowUp4 .5s ease-in-out 0s 1;
+}
+
+.ani-5{
+    animation: tabShowUp5 .5s ease-in-out 0s 1;
+}
+
+
+@keyframes tabShowUp1 {
+    0% {
+        opacity: 0;
+        transform: scale(2);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes tabShowUp2 {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes tabShowUp3 {
+    0% {
+        opacity: 0;
+        transform: scale(.98);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes tabShowUp4 {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@keyframes tabShowUp5 {
+    0% {
+        opacity: 0;
+        transform: rotateX(900deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+
+main .show {
+    display: block!important;
+}
+.dNone {
+    display: none!important;
+}
+
+
+
+/*  */

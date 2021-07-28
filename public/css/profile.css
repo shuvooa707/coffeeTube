@@ -1,0 +1,35 @@
+i.fas.fa-user-circle.avatar:before {
+    font-size: 10em;
+}
+
+.hide{
+    display: none!important;
+}
+.propic{
+    cursor: pointer;
+}
+.picshow {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.63);
+    top: 0px;
+    left: 0px;
+    z-index: 10101;
+    width: 100vw;
+    height: 100vh;
+}
+.picshow > .fa-window-close {
+    font-size: 24px;
+    font-size: 74px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.picshow img{
+    max-width: 80vw;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,421 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f3f3f3;
+}
+
+.bt-nav-container{
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 101;
+}
+.navbar-brand {
+    border-right: 2px solid white;
+    background: repeating-linear-gradient(to right, #f5f5f5 , transparent);
+    background-repeat: repeat-x;
+    padding-left: 10px;
+    animation: movingAni 2s linear 0s infinite;
+}
+
+@keyframes movingAni {
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 154px;
+    }
+}
+
+.bt-navbar {
+    /* width: 100%; */
+    /* height: 50px; */
+    background-color: white;
+    box-shadow: 0px 5px 10px #ddd;
+    /* position: fixed; */
+    /* top: 0px; */
+    /* left: 0px; */
+    margin: 0px;
+}
+.nav-item.active i {
+    color:#6a3;
+}
+
+input[type="search"] {
+    height: unset!important;
+    border-radius: 5px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    transition: unset;
+    font-size: 17.5px;
+    border-bottom-left-radius:  15px;
+    border-top-left-radius:  15px;
+    border-bottom-right-radius: unset;
+    border-top-right-radius: unset;
+}
+input[type="search"]:focus {
+    border: 1px solid green;
+    box-shadow: 0 0 0 0.1rem rgba(0, 128, 0, 0.25);
+}
+.search-button {
+    transition: unset;
+    border-bottom-left-radius: unset;
+    border-top-left-radius: unset;
+    border-bottom-right-radius:  15px;
+    border-top-right-radius:  15px;
+    padding-right: 7px;
+    padding-left: 7px;
+
+}
+
+.search-button:focus,.search-button:active {
+    border: 1px solid green;
+    box-shadow: 0 0 0 0.1rem rgba(0, 128, 0, 0.25);
+}
+
+.carousel-item {
+    transition: all .5s ease-out!important;
+}
+
+.corosol-indicator-pill {
+    bottom: 70px;
+}
+
+.corosol-indicator-pill li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 30px;
+    transition: all .5s linear;
+    border: 3px solid transparent;
+}
+
+.corosol-indicator-pill li.active{
+    border: 3px solid rgba(0, 0, 0, 0.25);
+}
+.tv-channel-container{
+    z-index: 10;
+    position: relative;
+    /* top: -50%; */
+    /* overflow: hidden; */
+    transform: translateY(-35%);
+}
+.tv-channel-container .next {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -25px;
+    cursor: pointer;
+}
+.tv-channel-container .prev {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    cursor: pointer;
+}
+.tv-channels-slider {
+    width: 100%;
+}
+.silk-item {
+    width: 100px;
+    height: 70px;
+    display: inline-block;
+    margin: 0px 10px;
+    overflow: hidden;
+    box-shadow: unset;
+    transition: all 0.4s linear;
+    border-radius: 5px!important;
+}
+.tv-channels-slider .silk-item {
+    box-shadow: 0px 0px 10px #d2d2d2bd;
+    transition: all .8s  cubic-bezier(1, -0.51, 0.05, 1.71) !important;
+    width: 140px!important;
+    border: 5px solid white;
+    box-shadow: rgb(0, 0, 0) 0px 0px 1px;
+    border-radius: 50% !important;
+}
+.tv-channels-slider .silk-item:hover {
+    box-shadow: 0px 0px 7px #2c2c2c7a;
+    /* transform: scale(1.05); */
+}
+.slick-list {
+    padding-bottom: 15px!important;
+}
+.silk-item img {
+    width: 100%;
+    height: 100px;
+}
+
+.slick-prev {
+    margin-right: 50px;;
+}
+.slick-prev:before {
+    font-size: 50px!important;
+    color:#999!important;
+}
+.slick-next:before {
+    font-size: 50px!important;
+    color:#999!important;
+}
+
+.video-js
+ {
+    max-height: 480px;
+ }
+
+ .tag {
+    background:#f1f0f5;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #8a8a8a;
+    padding: 3px 10px;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+ }
+
+ .form-control {
+    border-radius: 3px;
+ }
+ .form-control:focus {
+    border-color: #28a745;
+    outline: 0;
+    box-shadow: 0 0 20px 0.1rem rgba(40, 167, 69, 0.34);
+ }
+ .dropdown-menu {
+     border-radius: 2px;
+ }
+.dropdown-item
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color:#aaa;
+    font-size: small;
+}
+.dropdown-item:not(:last-child)
+{
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-item:hover
+{
+    color: white;
+    background-color: #28a746e7;
+}
+.profile-btn {
+    border:1px solid #ccc;
+}
+.profile-btn:active,.profile-btn:focus {
+    border: 1px solid green;
+    box-shadow: 0 0 0 0.1rem rgba(0, 128, 0, 0.25);
+}
+
+.profilePicThumb
+{
+    display: inline-block;
+    width: 1.7em;
+    height: 1.7em;
+    border-radius: 50%;
+    background-color: lightcoral;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-50%) translateY(0%);
+}
+
+
+/**************** Slider Instance ***************/
+
+/* ********* Most Popular */
+
+
+.slider-instanse{
+    z-index: 10;
+    position: relative;
+    /* top: -50%; */
+    /* overflow: hidden; */
+    /* transform: translateY(-35%); */
+}
+.slider-next {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
+    right: -25px;
+    cursor: pointer;
+    background: #00800059;
+    color: #ffffff;
+    padding: 5px 17px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.slider-prev {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
+    left: -25px;
+    cursor: pointer;
+    background: #00800059;
+    color: #ffffff;
+    padding: 5px 17px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.slider-prev:hover {
+    background: #008000;
+}
+.most-popular-slider-next:hover {
+    background: #008000;
+}
+.slider-instanse {
+    width: 100%;
+}
+
+.slider-instanse .silk-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.slider-instanse .silk-item {
+    width: 100px;
+    /* height: 150px; */
+    display: inline-block;
+    margin: 0px 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    transition: all 0.4s linear;
+    position: relative;
+    z-index: 4;
+}
+.slider-instanse-item-detail-overlay {
+    width: 100%;
+    height:100%;
+    background-color: rgba(58, 136, 58, 0.781);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 5;
+    transition: all .3s ease-out;
+    padding: 10px;
+    color: white;
+}
+
+.slider-instanse .silk-item:hover .slider-instanse-item-detail-overlay {
+    top: 0%;
+}
+
+/**************** /Slider Instance ***************/
+
+
+/* ********* Most Popular */
+
+
+.most-popular-slider, .slider-instanse{
+    z-index: 10;
+    position: relative;
+    /* top: -50%; */
+    /* overflow: hidden; */
+    /* transform: translateY(-35%); */
+}
+.most-popular-slider-next,.slider-next {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
+    right: -25px;
+    cursor: pointer;
+    background: #00800059;
+    color: #ffffff;
+    padding: 5px 17px;
+    border-radius: 50%;
+    z-index: 100;
+}
+.most-popular-slider-prev,.slider-prev {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-47%);
+    left: -25px;
+    cursor: pointer;
+    background: #00800059;
+    color: #ffffff;
+    padding: 5px 17px;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+.most-popular-slider-prev:hover {
+    background: #008000;
+}
+.most-popular-slider-next:hover {
+    background: #008000;
+}
+.most-popular-slider {
+    width: 100%;
+}
+
+.most-popular-slider .silk-item img {
+    width: 100%;
+    height: 200px;
+}
+
+.most-popular-slider .silk-item {
+    width: 100px;
+    /* height: 150px; */
+    display: inline-block;
+    margin: 0px 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    transition: all 0.4s linear;
+    position: relative;
+    z-index: 4;
+}
+.most-popular-item-detail-overlay {
+    width: 100%;
+    height:100%;
+    background-color: rgba(58, 136, 58, 0.781);
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 5;
+    transition: all .3s ease-out;
+    padding: 10px;
+    color: white;
+}
+
+.most-popular-slider .silk-item:hover .most-popular-item-detail-overlay {
+    top: 0%;
+}
+
+.home-body {
+    position: relative;
+    padding-bottom: 100px;
+}
+.load-more-section-spinner > .spinner-border {
+    border-radius: 50%!important;
+    color: #20d220;
+    border: .5em solid #28a745;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 4rem;
+    height: 4rem;
+    animation: spinner-border 2s linear infinite;
+}
+.load-more-section-spinner {
+    animation-duration: .75s;
+    position: absolute;
+    bottom: 0px;
+    z-index: 9999;
+    display: flex;
+    left: 50%;
+    color: green;
+}
+
+ /*  */
