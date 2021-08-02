@@ -96,7 +96,7 @@ class contentController extends Controller
 
         // exit(0);
         // dump( request()->file("video") );
-        // dd( request()->file("thumbnail") );
+        // dd( request() );
 
         if ( is_array($req->file("thumbnail")) ) {
             $thumbnail = $req->file("thumbnail")[0]->store("public/thumbnail");

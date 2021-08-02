@@ -86,23 +86,23 @@
                         </div>
                         <div class="form-group">
                             <label for="video-description">Write A short Description</label>
-                            <textarea name="description" class="form-control" id="video-description" cols="30" rows="7" required></textarea>
+                            <textarea  value="n/a"  name="description" class="form-control" id="video-description" cols="30" rows="7" ></textarea>
 
                         </div>
                         <div class="form-group">
                             <label for="video-producer">Producer</label>
-                            <input type="text" id="video-producer" name="producer" class="form-control" required>
+                            <input   value="n/a" type="text" id="video-producer" name="producer" class="form-control" required>
 
                         </div>
                         <div class="form-group">
                             <label for="video-director">Director</label>
-                            <input type="text" id="video-director" id="director" class="form-control" required>
+                            <input   value="n/a" type="text" id="video-director" id="director" class="form-control" required>
                         </div>
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="form-group">
                                     <label for="video-genre">Genre</label>
-                                    <select name="genre" id="genre" class="form-control" required>
+                                    <select value="n/a"  name="genre" id="genre" class="form-control" required>
                                         <option value="">Choose</option>
                                         <option value="action">Action</option>
                                         <option value="comedy">Comedy</option>

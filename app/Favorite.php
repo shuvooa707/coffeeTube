@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use App\User;
 use App\Video;
 
-    class Favorite ds Model
+    class Favorite extends Model
 {
 
     protected $guarded = [];

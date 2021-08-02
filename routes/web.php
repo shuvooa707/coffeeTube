@@ -282,7 +282,7 @@ Route::get("/dashboard/sections/getmoresections", function (Request $request) {
 })->name("section.getmore");
 
 
-Route::get("/section/{sid}", function ($sid = null) {
+Route::get("/section/show/{sid}", function ($sid = null) {
     // dd(Section::find($sid));
     if (!$sid) {
         return redirect("/");
@@ -649,6 +649,10 @@ Route::get("/comp", function(){
 
     run($arr, ["a"], [777,888,999]);
     var_dump($arr);
+});
+
+Route::get("/make", function(){
+    return "check";
 });
 
 //
